@@ -46,7 +46,7 @@ a{
   padding: 0 20px;
 }
 .header{
-  background: url(/Assets/Hero-bg.png) center/cover no-repeat;
+  background: url(./Assets/Hero-bg.png) center/cover no-repeat;
   padding: 50px 0 150px 0;
 }
 .nav{
