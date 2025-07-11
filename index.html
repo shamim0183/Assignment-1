@@ -8,25 +8,25 @@
   <link rel="stylesheet" href="/style/style.css">
 </head>
 
-<body>
+<body class="body">
   <!-- Header Section Start -->
   <header class="header container">
-    <nav class="nav">
-      <h2 class="logo">LOGO</h2>
-      <div>
-        <button class="btn__primary">
-          Sign Up
-        </button>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="nav">
+        <img src="/Assets/LOGO.png" alt="logo" class="logo">
+        <div>
+          <a href="#" class="btn__primary">
+                 Sign Up
+          </a>
+        </div>
+      </nav>
+    </div>
     <div class="header__content">
       <h1 class="header__title">
         Cool Dark UI Template for Webflow Agencies!
       </h1>
       <div class="focus__btn">
-        <button class="btn__primary">
-          Stay Focused
-        </button>
+        <a href="#" class="btn__primary">Stay Focused</a>
       </div>
     </div>
   </header>
@@ -42,7 +42,7 @@
         <p class="preview__description">
           Explore the live preview and imagine your brand in this bold new look.
         </p>
-        <a href="#" class="preview__btn">
+        <a href="#" class="btn__primary">
           Launch Live Preview
         </a>
       </div>
@@ -53,21 +53,23 @@
     <!-- Preview Section End -->
     <!-- Stats Section Start -->
     <section class="stats">
-      <h2 class="stats__title">
-        Joined Thousands of Productive Users
-      </h2>
-      <div class="stats__items">
-        <div class="stats__item">
-          <div class="stats__number">50K</div>
-          <div class="stats__label">Active Users</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number">2M+</div>
-          <div class="stats__label">Focus Sessions</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number">95%</div>
-          <div class="stats__label">Satisfaction Rate</div>
+      <div class="stats__container">
+        <h2 class="stats__title">
+          Joined Thousands of Productive Users
+        </h2>
+        <div class="stats__items">
+          <div class="stats__item">
+            <h2 class="stats__number">50K</h2>
+            <p class="stats__label">Active Users</p>
+          </div>
+          <div class="stats__item">
+            <h2 class="stats__number">2M+</h2>
+            <p class="stats__label">Focus Sessions</p>
+          </div>
+          <div class="stats__item">
+            <h2 class="stats__number">95%</h2>
+            <p class="stats__label">Satisfaction Rate</p>
+          </div>
         </div>
       </div>
     </section>
@@ -120,15 +122,16 @@
             This template instantly leveled up our presence.” – Studio Vertex
           </p>
           <div class="testimonials__footer">
-            <img src="/Assets/avatar.png" alt="people" class="testimonials__avater">
-            <div>
-              <p class="testimonials__name">
-                Reviewer name
-              </p>
-              <p class="testimonials__date">
-                Date
-              </p>
-            </div>
+            <div class="testimonials__avater">
+              <img src="/Assets/avatar.png" alt="people">
+          </div>
+          <div>
+            <p class="testimonials__name">
+              Reviewer name
+            </p>
+            <p class="testimonials__date">
+              Date
+            </p>
           </div>
         </article>
         <article class="testimonials__card">
@@ -157,7 +160,8 @@
             </div>
           </div>
         </article>
-        <!-- Testimonials Card End -->
+      </div>
+      <!-- Testimonials Card End -->
       </div>
     </section>
     <!-- Testimonials Section End -->
@@ -169,10 +173,12 @@
       <p class="promo-section__quote">
         This template instantly leveled up our presence.” – Studio Vertex
       </p>
-      <button class="promo-section__cta btn__primary">
-        Ger Started Free
-      </button>
-      <img src="/Assets/wc-big.png" alt="Webflow" class="promo-section__image">
+      <div class="promo-section__cta">
+        <a href="#" class="promo-section__cta btn__primary">Ger Started Free</a>
+      </div>
+      <div class="promo-section__image">
+        <img src="/Assets/wc-big.png" alt="Webflow">
+      </div>
     </section>
     <!-- Promo Section End -->
     <!-- Contact Form Section Start -->
@@ -180,22 +186,26 @@
       <h2 class="contact-form__heading">
         Let’s Get in Touch
       </h2>
-      <div class="contact-form__field">
-        <input type="email" placeholder="example@email.com" class="contact-form__input">
-        <input type="text" placeholder="full name" class="contact-form__input">
-        <textarea placeholder="write your message...." class="contact-form__input"></textarea>
-        <button class="contact-form__btn btn__primary">
-          Get in Touch
-        </button>
-      </div>
+      <form action="#" class="contact-form__field">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@email.com" class="contact-form__input">
+      
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Full Name" class="contact-form__input">
+      
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message..." class="contact-form__input"></textarea>
+      
+        <button type="submit" class="contact-form__btn btn__primary">Get in Touch</button>
+        </form>
     </section>
     <!-- Contact Form Section End -->
   </main>
   <!-- Main Section End -->
   <!-- Footer Section Start -->
-   <footer class="footer">
+  <footer class="footer container">
     <div class="footer__logo">
-      <h2 class="logo">LOGO</h2>
+      <img src="/Assets/logo.png" alt="LOGO">
     </div>
     <p class="footer__description">
       Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your
@@ -209,7 +219,7 @@
         <a href="#" class="nav__item">Services</a>
       </div>
     </div>
-   </footer>
+  </footer>
   <!-- Footer Section End -->
 </body>
 
